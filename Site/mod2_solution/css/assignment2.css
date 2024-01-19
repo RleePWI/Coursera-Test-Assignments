@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    border: 1px black;
+}
+
+/***************** Desktop Version ********************/
+@media (min-width: 992px)
+{
+    float: left;
+    border: 1px solid green;
+
+}
+
+/***************** Tablet Version ********************/
+@media (min-width: 768px) and (max-width: 991px)
+{
+    float: left;
+    border: 1px solid green;
+
+}
+
+/***************** Mobile Version ********************/
+@media (max-width: 767px)
+{
+    float: left;
+    border: 1px solid green;
+
+}
