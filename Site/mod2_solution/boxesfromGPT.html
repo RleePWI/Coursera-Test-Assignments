@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Layout</title>
+<!--    <link rel="stylesheet" href="css/template.css">-->
+
+</head>
+
+<style>
+
+    /* Apply basic reset for margin and padding */
+    body, h1, h2, p, div {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Style for the outer box */
+    .outer-box {
+        border: 2px solid green;
+        width: 300px; /* Width of the outer box */
+        height: 300px; /* Height of the outer box */
+        background-color: #ddd; /* Light grey background */
+        position: relative; /* Relative position for absolute positioning of the inner box */
+        margin: 20px; /* Margin for spacing */
+    }
+
+    /* Style for the inner box */
+    .inner-box {
+        border: 2px solid purple;
+        width: 100%; /* Full width of the outer box */
+        height: 100%; /* Full height of the outer box */
+        background-color: #bbb; /* Darker grey background */
+        position: relative; /* Relative position for absolute positioning of the corner box */
+    }
+
+    /* Style for the corner box */
+    .corner-box {
+        border: 2px solid orange;
+        width: 50px; /* Width of the corner box */
+        height: 50px; /* Height of the corner box */
+        background-color: #999; /* Even darker grey background */
+        position: absolute; /* Absolute position to place it in the top right corner */
+        top: 0;
+        right: 0;
+    }
+
+
+</style>
+
+<body>
+<div class="outer-box">
+    <div class="inner-box">
+        <div class="corner-box"></div>
+    </div>
+</div>
+
+</body>
+</html>
