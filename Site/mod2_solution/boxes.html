@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boxes</title>
+<!--    <link rel="stylesheet" href="css/template.css">-->
+
+</head>
+
+<style>
+
+    /********** Base styles **********/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        /*border: 2px solid blue;*/
+        position: absolute;
+        width: 100%;
+
+    }
+
+    /*.row {*/
+    /*    width: 100%;*/
+    /*    !*position: relative;*!*/
+    /*    !*border: 10px solid blue;*!*/
+    /*}*/
+
+    .a {
+        background-color: #d59898;
+    }
+
+    .b {
+        background-color: #c14543;
+    }
+    .c {
+        background-color: #e7d08d;
+    }
+
+    p {
+        /*border: 1px black; THIS DOESN'T WORK why? **************************************/
+        padding: 30px 0 0 10px;
+    }
+
+    /****** Chicken, Beef, Sushi text box ******/
+    .menu-title {
+        text-align: center;
+        border: 2px solid;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 33.3%;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: "Century Gothic", sans-serif;
+
+    }
+
+
+    /**** Menu description ****/
+    .menu {
+        border: 2px solid black;
+        position: relative;
+        width: 90%;
+        height: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: gray;
+
+    }
+
+    .box-c {
+        border: 2px solid orange;
+    }
+
+
+
+    /***************** Desktop Version ********************/
+    @media (min-width: 992px) {
+        .col-dkv-4 {
+            float: left;
+            /*border: 2px solid green;*/
+            position: relative;
+            width: 33.3%;
+        }
+    }
+
+    /***************** Tablet Version ********************/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .col-tbv-2 {
+            float: left;
+            border: 1px solid green;
+        }
+
+        .col-tbv-2 {
+            width: 50%;
+        }
+    }
+
+    /***************** Mobile Version ********************/
+    @media (max-width: 767px) {
+
+
+        /*.col-mbv-1 {*/
+        /*    float: left;*/
+        /*    !*border: 1px solid green;*!*/
+        /*    border: 1px solid red;*/
+        /*}*/
+        .col-mbv-1 {
+            width: 100%;
+        }
+    }
+
+
+</style>
+
+<body>
+<h1>Our Menu</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-dkv-4">
+            <div class="menu">
+                <div class="menu-title a">Chicken</div>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum? </p>
+            </div>
+        </div>
+        <div class="col-dkv-4">
+            <div class="menu">
+                <div class="menu-title b">Beef</div>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum? </p>
+            </div>
+        </div>
+        <div class="col-dkv-4">
+            <div class="menu">
+                <div class="menu-title c">Sushi</div>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum? </p>
+            </div>
+        </div>
+    </div>
+
+    <!--        <div class="">-->
+    <!--            <div class="">Beef</div>-->
+    <!--            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum?.</p>-->
+    <!--        </div>-->
+    <!--        <div class="">-->
+    <!--            <div class="">Sushi</div>-->
+    <!--            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum?.</p>-->
+    <!--        </div>-->
+</div>
+
+
+
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-dkv-4 col-tbv-2 col-mbv-1">-->
+<!--            <div class="menu-title a">Chicken</div>-->
+<!--            <p class="col menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum?.</p>-->
+<!--        </div>-->
+<!--&lt;!&ndash;        <div class="col col-dkv-4 col-tbv-2 col-mbv-1">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="menu-title b">Beef</div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum?.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="col col-dkv-4 col-tbv-2 col-mbv-1">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="menu-title c">Sushi</div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="menu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti exercitationem inventore libero maiores minus nisi quod ratione sunt vitae. A doloribus facere nostrum tenetur totam? Ab consequatur cum laborum?.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+</body>
+</html>
