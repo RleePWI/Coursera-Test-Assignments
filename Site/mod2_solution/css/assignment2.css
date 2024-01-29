@@ -1,35 +1,115 @@
 * {
     box-sizing: border-box;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+body {
+}
+
+.container {
+    border: 5px solid green;
+    position: relative;
+    /*padding-left: 20px;*/
+ }
+
+.row {
+    width: 100%;
+    height: 100%;
+    border: 10px solid blue;
 }
 
 h1 {
+    text-align: center;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
-p {
-    border: 1px black;
+/****** Chicken, Beef, Sushi text box ******/
+.menu-title {
+    text-align: center;
+    border: 2px solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    /*padding-top: 5px;*/
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: "Century Gothic", sans-serif;
+    /*overflow-wrap: normal;*/
+}
+
+.a {
+    background-color: #d59898;
+}
+
+.b {
+    background-color: #c14543;
+}
+.c {
+    background-color: #e7d08d;
+}
+
+
+p.menu {
+    border: 1px green;
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*margin-top: 35px;*/
+    /*padding: 10px;*/
+}
+
+.col {
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+    float: left;
+    border: 2px solid black;
+    position: relative;
+    /*margin-right: 10px;*/
+    /*margin-left: 1px;*/
+    background-color: gray;
 }
 
 /***************** Desktop Version ********************/
-@media (min-width: 992px)
-{
-    float: left;
-    border: 1px solid green;
+@media (min-width: 992px) {
 
+
+    /*.col-dkv-4 {*/
+    /*    float: left;*/
+    /*    border: 2px solid black;*/
+    /*}*/
+    .col-dkv-4 {
+        width: 33.33%;
+    }
 }
 
 /***************** Tablet Version ********************/
-@media (min-width: 768px) and (max-width: 991px)
-{
-    float: left;
-    border: 1px solid green;
+@media (min-width: 768px) and (max-width: 991px) {
 
+    /*.col-tbv-2 {*/
+    /*    !*border: 1px solid green;*!*/
+    /*    float: left;*/
+    /*    border: 1px solid black;*/
+    /*}*/
+    .col-tbv-2 {
+        width: 50%;
+        /*padding: 10px;*/
+    }
 }
 
 /***************** Mobile Version ********************/
-@media (max-width: 767px)
-{
-    float: left;
-    border: 1px solid green;
+@media (max-width: 767px) {
 
+
+    /*.col-mbv-1 {*/
+    /*    float: left;*/
+    /*    !*border: 1px solid green;*!*/
+    /*    border: 1px solid red;*/
+    /*}*/
+    .col-mbv-1 {
+        width: 100%;
+    }
 }
+
