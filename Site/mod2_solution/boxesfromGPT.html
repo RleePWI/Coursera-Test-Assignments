@@ -20,8 +20,8 @@
     /* Style for the outer box */
     .outer-box {
         border: 2px solid green;
-        width: 300px; /* Width of the outer box */
-        height: 300px; /* Height of the outer box */
+        width: 33.3%; /* Width of the outer box */
+        /*height: 300px; !* Height of the outer box *!*/
         background-color: #ddd; /* Light grey background */
         position: relative; /* Relative position for absolute positioning of the inner box */
         margin: 20px; /* Margin for spacing */
@@ -29,18 +29,21 @@
 
     /* Style for the inner box */
     .inner-box {
+        text-align: center;
+        padding-top: 25px;
         border: 2px solid purple;
-        width: 100%; /* Full width of the outer box */
-        height: 100%; /* Full height of the outer box */
+        width: 90%; /* Full width of the outer box */
+        /*height: 80%; !* Full height of the outer box *!*/
         background-color: #bbb; /* Darker grey background */
         position: relative; /* Relative position for absolute positioning of the corner box */
     }
 
     /* Style for the corner box */
     .corner-box {
+        text-align: center;
         border: 2px solid orange;
-        width: 50px; /* Width of the corner box */
-        height: 50px; /* Height of the corner box */
+        width: 33%; /* Width of the corner box */
+        /*height: 50px; !* Height of the corner box *!*/
         background-color: #999; /* Even darker grey background */
         position: absolute; /* Absolute position to place it in the top right corner */
         top: 0;
@@ -52,8 +55,8 @@
 
 <body>
 <div class="outer-box">
-    <div class="inner-box">
-        <div class="corner-box"></div>
+    <div class="inner-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur cumque, deleniti dignissimos dolorem dolorum, fugit id magni maiores molestias numquam, officia perferendis porro possimus quo sequi sunt suscipit voluptatem.
+        <div class="corner-box">Chicken</div>
     </div>
 </div>
 
