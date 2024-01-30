@@ -18,8 +18,6 @@ h1 {
     /*border: 2px solid blue;*/
     position: absolute;
     width: 100%;
-    /*justify-items: center;*/
-
 }
 
 .a {
@@ -34,17 +32,15 @@ h1 {
 }
 
 p {
-    border: 2px solid black; /*THIS DOESN'T WORK why? *************************************/
-    padding: 2em 0 0 1em;
+    border: 2px solid black;
+    padding: 2em 1em 0 1em;
 }
 
 /****** Chicken, Beef, Sushi text box ******/
 .menu-title {
     text-align: center;
     border: 2px solid;
-    position: absolute;
-    top: 0;
-    right: 0;
+    float:right;
     width: 33.33%;
     padding-bottom: 5px;
     font-weight: bold;
@@ -55,16 +51,15 @@ p {
 /**** Menu description ****/
 .menu {
     position: relative;
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 1em;
+    margin-left: 1em;
     background-color: gray;
 }
 
 
 /***************** Desktop Version ********************/
 @media (min-width: 992px) {
-    .col-dkv-4 {
+    .col-lg-4 {
         float: left;
         /*border: 2px solid green;*/
         position: relative;
@@ -75,13 +70,13 @@ p {
 
 /***************** Tablet Version ********************/
 @media (min-width: 768px) and (max-width: 991px) {
-    .col-tbv-2 {
+    .col-md-2 {
         float: left;
         /*border: 2px solid red;*/
         position: relative;
         width: 50%;
-    }
-    .c-tbv-1 {
+            }
+    .c-md-1 {
         width: 100%;
 
     }
@@ -89,7 +84,7 @@ p {
 
 /***************** Mobile Version ********************/
 @media (max-width: 767px) {
-    .col-mbv-1 {
+    .col-sm-1 {
         float: left;
         /*border: 2px solid yellow;*/
         position: relative;
