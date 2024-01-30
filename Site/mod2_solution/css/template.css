@@ -1,0 +1,45 @@
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 15px;
+}
+
+p {
+    border: 1px black;
+    background-color: #A52A2A;
+    width: 90%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    color: aliceblue;
+}
+.row {
+    width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .col-dkv-4 {
+        float: left;
+        border: 1px solid green;
+    }
+    .col-dkv-4 {
+        width: 33.3%;
+    }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-tbv-2 {
+        float: left;
+        border: 1px solid green;
+    }
+
+    .col-tbv-2 {
+        width: 50%;
+    }
+}

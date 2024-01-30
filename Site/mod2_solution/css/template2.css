@@ -1,0 +1,63 @@
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin-bottom: 15px;
+}
+
+.box-a {
+    border: 5px black;
+}
+
+.my-text {
+
+    background-color: #A52A2A;
+    width: 90%;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    color: aliceblue;
+}
+.row {
+    width: 100%;
+}
+
+/***************** Desktop Version ********************/
+@media (min-width: 992px) {
+    .col-dkv-4 {
+        float: left;
+        border: 1px solid green;
+    }
+    .col-dkv-4 {
+        width: 33.3%;
+    }
+
+}
+
+/***************** Tablet Version ********************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tbv-2 {
+        float: left;
+        border: 1px solid green;
+    }
+
+    .col-tbv-2 {
+        width: 50%;
+    }
+}
+
+/***************** Mobile Version ********************/
+@media (max-width: 767px) {
+
+
+    /*.col-mbv-1 {*/
+    /*    float: left;*/
+    /*    !*border: 1px solid green;*!*/
+    /*    border: 1px solid red;*/
+    /*}*/
+    .col-mbv-1 {
+        width: 100%;
+    }
+}
