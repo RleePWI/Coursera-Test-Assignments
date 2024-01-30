@@ -1,13 +1,17 @@
 /********** Base styles **********/
 * {
     box-sizing: border-box;
+}
+body {
     margin: 0;
     padding: 0;
+
 }
+
 h1 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .container {
@@ -17,11 +21,12 @@ h1 {
 
 }
 
-/*.row {*/
-/*    width: 100%;*/
-/*    !*position: relative;*!*/
-/*    !*border: 10px solid blue;*!*/
-/*}*/
+.row {
+    /*margin-bottom: .3em;*/
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*border: 10px solid blue;*/
+}
 
 .a {
     background-color: #d59898;
@@ -35,8 +40,8 @@ h1 {
 }
 
 p {
-    /*border: 1px black; THIS DOESN'T WORK why? **************************************/
-    padding: 30px 0 0 10px;
+    border: 2px solid black; /*THIS DOESN'T WORK why? *************************************/
+    padding: 2em 0 0 1em;
 }
 
 /****** Chicken, Beef, Sushi text box ******/
@@ -46,31 +51,21 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-
-    width: 33.3%;
+    width: 33.33%;
     padding-bottom: 5px;
     font-weight: bold;
     font-family: "Century Gothic", sans-serif;
 
 }
 
-
 /**** Menu description ****/
 .menu {
-    border: 2px solid black;
     position: relative;
-    width: 90%;
-    height: 150px;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
     background-color: gray;
-
 }
-
-.box-c {
-    border: 2px solid orange;
-}
-
 
 
 /***************** Desktop Version ********************/
@@ -79,7 +74,8 @@ p {
         float: left;
         /*border: 2px solid green;*/
         position: relative;
-        width: 33.3%;
+        width: 33.33%;
+
     }
 }
 
@@ -87,24 +83,22 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
     .col-tbv-2 {
         float: left;
-        border: 1px solid green;
-    }
-
-    .col-tbv-2 {
+        border: 2px solid red;
+        position: relative;
         width: 50%;
+    }
+    .c-tbv-1 {
+        width: 100%;
+
     }
 }
 
 /***************** Mobile Version ********************/
 @media (max-width: 767px) {
-
-
-    /*.col-mbv-1 {*/
-    /*    float: left;*/
-    /*    !*border: 1px solid green;*!*/
-    /*    border: 1px solid red;*/
-    /*}*/
     .col-mbv-1 {
+        float: left;
+        /*border: 2px solid yellow;*/
+        position: relative;
         width: 100%;
     }
 }
